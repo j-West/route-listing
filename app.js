@@ -17,4 +17,7 @@ app.config(($routeProvider, $locationProvider) => {
       controller: "SecondHwCtrl",
       templateUrl: "partials/secondhw.html",
     })
+    .otherwise({
+      redirectTo: "/"
+    })
 })
